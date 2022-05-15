@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<!--
+    namespace
+-->
+<mapper namespace="com.ltj.mapper.UserMapper">
+    <!--&lt;!&ndash;resultType="com.ltj.pojo.User" 开启别名后可以写作user不区分大小写&ndash;&gt;-->
+    <!--&lt;!&ndash;装了MybatisX插件以后 区分大小写了 =.= &ndash;&gt;-->
+    <select id="selectAll" resultType="com.ltj.pojo.User">
+        select * from tb_user;
+    </select>
+    <!--<select id="selectById" resultType="com.ltj.pojo.User">-->
+
+    <!--</select>-->
+
+
+    <!--<select id="select" resultType="com.ltj.pojo.User">-->
+          <!--select *-->
+        <!--from tb_user-->
+        <!--where-->
+            <!--username=#{username} and-->
+            <!--password=#{password}-->
+    <!--</select>-->
+</mapper>
